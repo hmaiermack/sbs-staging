@@ -1,4 +1,6 @@
 import React from 'react'
+import Image from 'next/image'
+import Hero from '../public/Image01.jpg'
 
 const Navbar = () => {
   return (

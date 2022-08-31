@@ -4,6 +4,8 @@ import Image from 'next/image'
 import Divider from '../components/Divider'
 import Layout from '../components/Layout'
 import Hero from '../public/Image01.jpg'
+import Logo from '../public/logo.svg'
+
 
 
 const Home: NextPage = () => {
@@ -121,9 +123,17 @@ const Home: NextPage = () => {
       </div>
 
               {/* Footer */}
-              <footer className="footer p-10 bg-base-200 text-base-content w-screen absolute left-0">
+              <footer className="footer p-10 bg-gray-200 text-gray-600 w-screen absolute left-0">
   <div>
-    <p className='max-w-prose'>SBS Staging<br />Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim illum inventore, cum, aliquam facilis libero repudiandae maxime deserunt soluta dolorum optio? Tempore dolores iste distinctio dolorum ipsa temporibus minus exercitationem id explicabo, voluptatibus, cumque quidem. Possimus veniam sit soluta facere.</p>
+    <p className='max-w-prose'>
+    <div className='w-28 lg:w-36 mx-auto text-white'>
+                <Image 
+                    src={Logo}     
+                    layout="responsive"
+                />
+                </div>
+
+      <br />Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim illum inventore, cum, aliquam facilis libero repudiandae maxime deserunt soluta dolorum optio? Tempore dolores iste distinctio dolorum ipsa temporibus minus exercitationem id explicabo, voluptatibus, cumque quidem. Possimus veniam sit soluta facere.</p>
   </div> 
   <div>
     <span className="footer-title text-purple-400">Services</span> 
