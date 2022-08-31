@@ -1,12 +1,14 @@
 import React from 'react'
 import Image from 'next/image'
-import Logo from '../public/logo.svg'
 import Link from 'next/link'
+import Logo from '../public/logo.svg'
+import Footer from './Footer'
 
 
 const Layout = ({children}: {children: React.ReactNode}) => {
   return (
     <div className="drawer">
+        
         <input id="my-drawer-3" type="checkbox" className="drawer-toggle" /> 
         <div className="drawer-content flex flex-col sticky bg-white">
             {/* Navbar */}
@@ -22,6 +24,7 @@ const Layout = ({children}: {children: React.ReactNode}) => {
                 <Image 
                     src={Logo}     
                     layout="responsive"
+                    priority={true}
                 />
                 </div>
             </div>
@@ -51,41 +54,10 @@ const Layout = ({children}: {children: React.ReactNode}) => {
             </div>
             </div>
             </div>
-            <main className='bg-white container mx-auto'>{children}</main>
-                                  {/* Footer */}
-            <footer className="footer p-10 bg-gray-200 text-gray-600 w-screen">
-                <div>
-                    <p className='max-w-prose'>
-                    <div className='w-28 lg:w-36 mx-auto text-white'>
-                        <Image 
-                            src={Logo}     
-                            layout="responsive"
-                        />
-                    </div>
-                    <br />Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim illum inventore, cum, aliquam facilis libero repudiandae maxime deserunt soluta dolorum optio? Tempore dolores iste distinctio dolorum ipsa temporibus minus exercitationem id explicabo, voluptatibus, cumque quidem. Possimus veniam sit soluta facere.</p>
-                </div> 
-                <div>
-                    <span className="footer-title text-purple-400">Services</span> 
-                    <a className="link link-hover">Branding</a> 
-                    <a className="link link-hover">Design</a> 
-                    <a className="link link-hover">Marketing</a> 
-                    <a className="link link-hover">Advertisement</a>
-                </div> 
-                <div>
-                    <span className="footer-title text-purple-400">Company</span> 
-                    <a className="link link-hover">About us</a> 
-                    <a className="link link-hover">Contact</a> 
-                    <a className="link link-hover">Jobs</a> 
-                    <a className="link link-hover">Press kit</a>
-                </div> 
-                <div>
-                    <span className="footer-title text-purple-400">Legal</span> 
-                    <a className="link link-hover">Terms of use</a> 
-                    <a className="link link-hover">Privacy policy</a> 
-                    <a className="link link-hover">Cookie policy</a>
-                </div>
-            </footer>
-
+            <main className='bg-white container mx-auto'>
+                {children}    
+            </main>
+            <Footer />
         </div> 
         <div className="drawer-side">
             <label htmlFor="my-drawer-3" className="drawer-overlay"></label> 

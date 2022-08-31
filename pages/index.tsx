@@ -1,6 +1,7 @@
 import type { NextPage } from 'next'
 import Image from 'next/image'
 import Divider from '../components/Divider'
+import Footer from '../components/Footer'
 import Layout from '../components/Layout'
 import Hero from '../public/Image01.jpg'
 import Logo from '../public/logo.svg'
