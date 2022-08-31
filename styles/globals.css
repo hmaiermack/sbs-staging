@@ -1,3 +1,32 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+    font-family: "Chic";
+    src: url("../public/Chic.otf");
+}
+
+@font-face {
+    font-family: "Monet-Bold";
+    src: url("../public/Monet-Bold.woff");
+}
+
+@font-face {
+    font-family: "Monet-Light";
+    src: url("../public/Monet-Light.woff");
+}
+
+@font-face {
+    font-family: "Monet-Regular";
+    src: url("../public/Monet-Regular.woff");
+}
+
+@font-face {
+    font-family: "Yadon-Regular";
+    src: url("../public/Yadon-Regular.woff");
+}
+
+html {
+    background-color: white;
+}

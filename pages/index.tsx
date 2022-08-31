@@ -1,85 +1,154 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
 import Image from 'next/image'
+import Divider from '../components/Divider'
+import Layout from '../components/Layout'
+import Hero from '../public/Image01.jpg'
+
 
 const Home: NextPage = () => {
   return (
-    <div className="flex min-h-screen flex-col items-center justify-center py-2">
-      <Head>
-        <title>Create Next App</title>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
+    <Layout>
+      <div className="hero min-h-screen container -z-10">
+        <Image 
+          src={Hero}
+          layout="fill"
+          objectFit='cover'
+          quality={100}
+        />
+      </div>
 
-      <main className="flex w-full flex-1 flex-col items-center justify-center px-20 text-center">
-        <h1 className="text-6xl font-bold">
-          Welcome to{' '}
-          <a className="text-blue-600" href="https://nextjs.org">
-            Next.js!
-          </a>
-        </h1>
-
-        <p className="mt-3 text-2xl">
-          Get started by editing{' '}
-          <code className="rounded-md bg-gray-100 p-3 font-mono text-lg">
-            pages/index.tsx
-          </code>
-        </p>
-
-        <div className="mt-6 flex max-w-4xl flex-wrap items-center justify-around sm:w-full">
-          <a
-            href="https://nextjs.org/docs"
-            className="mt-6 w-96 rounded-xl border p-6 text-left hover:text-blue-600 focus:text-blue-600"
-          >
-            <h3 className="text-2xl font-bold">Documentation &rarr;</h3>
-            <p className="mt-4 text-xl">
-              Find in-depth information about Next.js features and its API.
+      {/* service boxes */}
+      <div>
+        <h1 className='text-center text-4xl font-chic pt-8 text-gray-700 font-black'>Home Staging and Interiors</h1>
+        <Divider style='LARGE'/>
+      </div>
+      <div className='flex flex-col items-center mx-auto md:flex-row md:justify-between md:items-start gap-10 pb-12 text-gray-500'>
+        <div className='w-4/5 lg:w-1/4 block'>
+          <Image 
+            src={Hero}
+            layout="responsive"
+            />
+            <div className='w-full mt-4 mx-auto font-chic text-2xl text-gray-600 text-center'>Home Staging</div>
+            <Divider style='SMALL'/>
+            <p className='text-center max-w-prose text-lg font-yadon-regular'>
+              Inspire buyers by showing them a finished home that feels both elegant and welcoming.
             </p>
-          </a>
-
-          <a
-            href="https://nextjs.org/learn"
-            className="mt-6 w-96 rounded-xl border p-6 text-left hover:text-blue-600 focus:text-blue-600"
-          >
-            <h3 className="text-2xl font-bold">Learn &rarr;</h3>
-            <p className="mt-4 text-xl">
-              Learn about Next.js in an interactive course with quizzes!
-            </p>
-          </a>
-
-          <a
-            href="https://github.com/vercel/next.js/tree/canary/examples"
-            className="mt-6 w-96 rounded-xl border p-6 text-left hover:text-blue-600 focus:text-blue-600"
-          >
-            <h3 className="text-2xl font-bold">Examples &rarr;</h3>
-            <p className="mt-4 text-xl">
-              Discover and deploy boilerplate example Next.js projects.
-            </p>
-          </a>
-
-          <a
-            href="https://vercel.com/import?filter=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className="mt-6 w-96 rounded-xl border p-6 text-left hover:text-blue-600 focus:text-blue-600"
-          >
-            <h3 className="text-2xl font-bold">Deploy &rarr;</h3>
-            <p className="mt-4 text-xl">
-              Instantly deploy your Next.js site to a public URL with Vercel.
-            </p>
-          </a>
         </div>
-      </main>
+        <div className='w-4/5 lg:w-1/4 block'>
+          <Image 
+            src={Hero}
+            layout="responsive"
+            />
+            <div className='w-full mt-4 mx-auto font-chic text-2xl text-gray-600 text-center'>Interior Design</div>
+            <Divider style='SMALL'/>
+            <p className='text-center max-w-prose text-lg font-yadon-regular'>
+              Work with us to create the space of your dreams - perfectly styled to fit your specific taste.
+            </p>
+        </div>
+        <div className='w-4/5 lg:w-1/4 block'>
+          <Image 
+            src={Hero}
+            layout="responsive"
+            />
+            <div className='w-full mt-4 mx-auto font-chic text-2xl text-gray-600 text-center'>Furniture Leasing</div>
+            <Divider style='SMALL'/>
+            <p className='text-center max-w-prose text-lg font-yadon-regular'>
+              Rent our high-end furniture and transform your space into a luxury home.
+            </p>
+        </div>
+        <div className='w-4/5 lg:w-1/4 block'>
+          <Image 
+            src={Hero}
+            layout="responsive"
+            />
+            <div className='w-full mt-4 mx-auto font-chic text-2xl text-gray-600 text-center'>Consultation</div>
+            <Divider style='SMALL'/>
+            <p className='text-center max-w-prose text-lg font-yadon-regular'>
+              Consult with us for any of your design needs.
+            </p>
+        </div>
+      </div>
+      <div>
+        <h1 className='text-center text-4xl font-chic pt-8 text-gray-700 font-black'>Featured Homes</h1>
+        <Divider style='LARGE'/>
+      </div>
+      <div className='flex flex-col items-center mx-auto sm:flex-row sm:justify-between sm:items-start sm:flex-wrap gap-10 lg:gap-4 pb-12'>
+        <div className='w-4/5 sm:w-[45%] block'>
+          <Image 
+            src={Hero}
+            layout="responsive"
+            />
+            <div className='w-full mt-4 mx-auto font-chic text-2xl text-gray-600 text-center'>Home Staging</div>
+            <Divider style='SMALL'/>
+            <p className='text-center max-w-prose text-lg font-yadon-regular'>
+              Inspire buyers by showing them a finished home that feels both elegant and welcoming.
+            </p>
+        </div>
+        <div className='w-4/5 sm:w-[45%] block'>
+          <Image 
+            src={Hero}
+            layout="responsive"
+            />
+            <div className='w-full mt-4 mx-auto font-chic text-2xl text-gray-600 text-center'>Interior Design</div>
+            <Divider style='SMALL'/>
+            <p className='text-center max-w-prose text-lg font-yadon-regular'>
+              Work with us to create the space of your dreams - perfectly styled to fit your specific taste.
+            </p>
+        </div>
+        <div className='w-4/5 sm:w-[45%] block'>
+          <Image 
+            src={Hero}
+            layout="responsive"
+            />
+            <div className='w-full mt-4 mx-auto font-chic text-2xl text-gray-600 text-center'>Furniture Leasing</div>
+            <Divider style='SMALL'/>
+            <p className='text-center max-w-prose text-lg font-yadon-regular'>
+              Rent our high-end furniture and transform your space into a luxury home.
+            </p>
+        </div>
+        <div className='w-4/5 sm:w-[45%] block'>
+          <Image 
+            src={Hero}
+            layout="responsive"
+            />
+            <div className='w-full mt-4 mx-auto font-chic text-2xl text-gray-600 text-center'>Consultation</div>
+            <Divider style='SMALL'/>
+            <p className='text-center max-w-prose text-lg font-yadon-regular'>
+              Consult with us for any of your design needs.
+            </p>
+        </div>
+      </div>
 
-      <footer className="flex h-24 w-full items-center justify-center border-t">
-        <a
-          className="flex items-center justify-center gap-2"
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{' '}
-          <Image src="/vercel.svg" alt="Vercel Logo" width={72} height={16} />
-        </a>
-      </footer>
-    </div>
+              {/* Footer */}
+              <footer className="footer p-10 bg-base-200 text-base-content w-screen absolute left-0">
+  <div>
+    <p className='max-w-prose'>SBS Staging<br />Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim illum inventore, cum, aliquam facilis libero repudiandae maxime deserunt soluta dolorum optio? Tempore dolores iste distinctio dolorum ipsa temporibus minus exercitationem id explicabo, voluptatibus, cumque quidem. Possimus veniam sit soluta facere.</p>
+  </div> 
+  <div>
+    <span className="footer-title text-purple-400">Services</span> 
+    <a className="link link-hover">Branding</a> 
+    <a className="link link-hover">Design</a> 
+    <a className="link link-hover">Marketing</a> 
+    <a className="link link-hover">Advertisement</a>
+  </div> 
+  <div>
+    <span className="footer-title text-purple-400">Company</span> 
+    <a className="link link-hover">About us</a> 
+    <a className="link link-hover">Contact</a> 
+    <a className="link link-hover">Jobs</a> 
+    <a className="link link-hover">Press kit</a>
+  </div> 
+  <div>
+    <span className="footer-title text-purple-400">Legal</span> 
+    <a className="link link-hover">Terms of use</a> 
+    <a className="link link-hover">Privacy policy</a> 
+    <a className="link link-hover">Cookie policy</a>
+  </div>
+</footer>
+
+
+    </Layout>
   )
 }
 

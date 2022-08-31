@@ -5,7 +5,14 @@ module.exports = {
     './components/**/*.{js,ts,jsx,tsx}',
   ],
   theme: {
+    fontFamily: {
+      chic: ["Chic", "sans-serif"],
+      ["monet-bold"]: ["Monet-Bold", "sans-serif"],
+      ["monet-light"]: ["Monet-Light", "sans-serif"],
+      ["monet-regular"]: ["Monet-Regular", "sans-serif"],
+      ["yadon-regular"]: ["Yadon-Regular", "sans-serif"],
+    },
     extend: {},
   },
-  plugins: [],
+  plugins: [require("daisyui")],
 }
