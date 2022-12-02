@@ -20,12 +20,14 @@ const Layout = ({children}: {children: React.ReactNode}) => {
                 </label>
             </div> 
             <div className="flex-1 px-2 justify-center lg:justify-start mx-2">
-                <div className='w-28 lg:w-36 mx-auto'>
-                <Image 
-                    src={Logo}     
-                    layout="responsive"
-                    priority={true}
-                />
+                <div className='w-28 lg:w-36 mx-auto hover:cursor-pointer'>
+                    <Link href="/">
+                        <Image 
+                            src={Logo}     
+                            layout="responsive"
+                            priority={true}
+                        />
+                    </Link>
                 </div>
             </div>
             <div className="flex-none hidden lg:block">
@@ -54,7 +56,7 @@ const Layout = ({children}: {children: React.ReactNode}) => {
             </div>
             </div>
             </div>
-            <main className='bg-white container mx-auto'>
+            <main className='bg-white mx-auto'>
                 {children}    
             </main>
             <Footer />

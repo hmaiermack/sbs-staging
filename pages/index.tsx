@@ -1,16 +1,14 @@
 import type { NextPage } from 'next'
 import Image from 'next/image'
 import Divider from '../components/Divider'
-import Footer from '../components/Footer'
 import Layout from '../components/Layout'
 import Hero from '../public/Image01.jpg'
-import Logo from '../public/logo.svg'
 
 
 
 const Home: NextPage = () => {
   return (
-    <Layout>
+    <div className='container mx-auto'>
       <div className="hero min-h-screen container -z-10">
         <Image 
           src={Hero}
@@ -81,10 +79,10 @@ const Home: NextPage = () => {
             src={Hero}
             layout="responsive"
             />
-            <div className='w-full mt-4 mx-auto font-chic text-2xl text-gray-600 text-center'>Home Staging</div>
+            <div className='w-full mt-4 mx-auto font-chic text-2xl text-gray-600 text-center'>Home 1</div>
             <Divider style='SMALL'/>
             <p className='text-center max-w-prose text-lg font-yadon-regular'>
-              Inspire buyers by showing them a finished home that feels both elegant and welcoming.
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque distinctio explicabo dicta, ipsam ullam sit quod eaque ea sint aspernatur.
             </p>
         </div>
         <div className='w-4/5 sm:w-[45%] block'>
@@ -92,10 +90,10 @@ const Home: NextPage = () => {
             src={Hero}
             layout="responsive"
             />
-            <div className='w-full mt-4 mx-auto font-chic text-2xl text-gray-600 text-center'>Interior Design</div>
+            <div className='w-full mt-4 mx-auto font-chic text-2xl text-gray-600 text-center'>Home 2</div>
             <Divider style='SMALL'/>
             <p className='text-center max-w-prose text-lg font-yadon-regular'>
-              Work with us to create the space of your dreams - perfectly styled to fit your specific taste.
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime non exercitationem labore aliquid dolorum eveniet explicabo doloremque commodi. Dicta, unde.
             </p>
         </div>
         <div className='w-4/5 sm:w-[45%] block'>
@@ -103,10 +101,10 @@ const Home: NextPage = () => {
             src={Hero}
             layout="responsive"
             />
-            <div className='w-full mt-4 mx-auto font-chic text-2xl text-gray-600 text-center'>Furniture Leasing</div>
+            <div className='w-full mt-4 mx-auto font-chic text-2xl text-gray-600 text-center'>Home 3</div>
             <Divider style='SMALL'/>
             <p className='text-center max-w-prose text-lg font-yadon-regular'>
-              Rent our high-end furniture and transform your space into a luxury home.
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores neque tenetur officia ab porro ipsum recusandae dignissimos tempora animi ullam?
             </p>
         </div>
         <div className='w-4/5 sm:w-[45%] block'>
@@ -114,14 +112,14 @@ const Home: NextPage = () => {
             src={Hero}
             layout="responsive"
             />
-            <div className='w-full mt-4 mx-auto font-chic text-2xl text-gray-600 text-center'>Consultation</div>
+            <div className='w-full mt-4 mx-auto font-chic text-2xl text-gray-600 text-center'>Home 4</div>
             <Divider style='SMALL'/>
             <p className='text-center max-w-prose text-lg font-yadon-regular'>
-              Consult with us for any of your design needs.
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro ex officia tempora dolor odit commodi nihil ullam at fuga similique.
             </p>
         </div>
       </div>
-    </Layout>
+      </div>
   )
 }
 
