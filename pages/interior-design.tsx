@@ -73,49 +73,86 @@ const interiorDesign = () => {
         </div>
 
         <div className='relative w-screen'>
-        <div className='absolute z-50 w-3/5 left-[20%] mt-16'>
-            <h1 className='text-4xl text-center text-white font-chic font-extrabold'>Frequently Asked Questions</h1>
-            <Divider style="SMALL" />
-            <div className='flex flex-col w-full mt-8'>
-                <div className='w-full flex flex-col'>
-                    <div className='flex'>
-                    <div className='w-10 h-10 bg-purple-400 rounded-full mr-8' />
-                    <span className='text-4xl text-left text-white font-chic font-extrabold'>This is a question</span>
+            <div className=' hidden xl:block absolute z-50 w-3/5 left-[20%] mt-16'>
+                <h1 className='text-4xl text-center text-white font-chic font-extrabold'>Frequently Asked Questions</h1>
+                <Divider style="SMALL" />
+                <div className='flex flex-col w-full mt-8'>
+                    <div className='w-full flex flex-col'>
+                        <div className='flex'>
+                        <div className='w-10 h-10 bg-purple-400 rounded-full mr-8' />
+                        <span className='text-4xl text-left text-white font-chic font-extrabold'>This is a question</span>
+                        </div>
+                        <div className='flex mt-4'>
+                            <span className='text-lg text-left text-white ml-[4.5rem]'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut libero facilis officia consectetur sit quam consequuntur saepe iure corrupti voluptas, temporibus quas? Earum ullam, praesentium dolor assumenda officia, at explicabo nemo nesciunt dolorum repellat sit, similique fugit vel laborum nam!</span>
+                        </div>
                     </div>
-                    <div className='flex mt-4'>
-                        <span className='text-lg text-left text-white ml-[4.5rem]'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut libero facilis officia consectetur sit quam consequuntur saepe iure corrupti voluptas, temporibus quas? Earum ullam, praesentium dolor assumenda officia, at explicabo nemo nesciunt dolorum repellat sit, similique fugit vel laborum nam!</span>
+                    <div className='w-full flex flex-col mt-8'>
+                        <div className='flex'>
+                        <div className='w-10 h-10 bg-purple-400 rounded-full mr-8' />
+                        <span className='text-4xl text-left text-white font-chic font-extrabold'>This is a question</span>
+                        </div>
+                        <div className='flex mt-4'>
+                            <span className='text-lg text-left text-white ml-[4.5rem]'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut libero facilis officia consectetur sit quam consequuntur saepe iure corrupti voluptas, temporibus quas? Earum ullam, praesentium dolor assumenda officia, at explicabo nemo nesciunt dolorum repellat sit, similique fugit vel laborum nam!</span>
+                        </div>
                     </div>
-                </div>
-                <div className='w-full flex flex-col mt-8'>
-                    <div className='flex'>
-                    <div className='w-10 h-10 bg-purple-400 rounded-full mr-8' />
-                    <span className='text-4xl text-left text-white font-chic font-extrabold'>This is a question</span>
-                    </div>
-                    <div className='flex mt-4'>
-                        <span className='text-lg text-left text-white ml-[4.5rem]'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut libero facilis officia consectetur sit quam consequuntur saepe iure corrupti voluptas, temporibus quas? Earum ullam, praesentium dolor assumenda officia, at explicabo nemo nesciunt dolorum repellat sit, similique fugit vel laborum nam!</span>
-                    </div>
-                </div>
-                <div className='w-full flex flex-col mt-8'>
-                    <div className='flex'>
-                    <div className='w-10 h-10 bg-purple-400 rounded-full mr-8' />
-                    <span className='text-4xl text-left text-white font-chic font-extrabold'>This is a question</span>
-                    </div>
-                    <div className='flex mt-4'>
-                        <span className='text-lg text-left text-white ml-[4.5rem]'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut libero facilis officia consectetur sit quam consequuntur saepe iure corrupti voluptas, temporibus quas? Earum ullam, praesentium dolor assumenda officia, at explicabo nemo nesciunt dolorum repellat sit, similique fugit vel laborum nam!</span>
+                    <div className='w-full flex flex-col mt-8'>
+                        <div className='flex'>
+                        <div className='w-10 h-10 bg-purple-400 rounded-full mr-8' />
+                        <span className='text-4xl text-left text-white font-chic font-extrabold'>This is a question</span>
+                        </div>
+                        <div className='flex mt-4'>
+                            <span className='text-lg text-left text-white ml-[4.5rem]'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut libero facilis officia consectetur sit quam consequuntur saepe iure corrupti voluptas, temporibus quas? Earum ullam, praesentium dolor assumenda officia, at explicabo nemo nesciunt dolorum repellat sit, similique fugit vel laborum nam!</span>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
 
-                    <div className='h-full w-full -z-10 overflow-hidden brightness-50'>
-                        <Image 
-                            src={Hero}
-                            placeholder="blur"
-                            sizes='100vw'
-                            objectFit='cover'
-                        />
+            <div className=' xl:hidden absolute z-50 w-3/5 left-[20%] mt-16 mb-40'>
+                <h1 className='text-4xl text-center text-white font-chic font-extrabold'>Frequently Asked Questions</h1>
+                <Divider style="SMALL" />
+            </div>
+            
+            <div className='h-full w-full -z-10 overflow-hidden brightness-50'>
+                <Image 
+                    src={Hero}
+                    placeholder="blur"
+                    sizes='100vw'
+                    objectFit='cover'
+                />
+            </div>
+
+            <div className='xl:hidden flex flex-col w-full my-8 px-4'>
+                    <div className='w-full flex flex-col'>
+                        <div className='flex'>
+                        <div className='w-5 h-5 bg-purple-400 rounded-full mr-4 mt-1' />
+                        <span className='text-2xl text-left font-chic font-extrabold'>This is a question</span>
+                        </div>
+                        <div className='flex mt-4'>
+                            <span className='text-lg text-left ml-16'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut libero facilis officia consectetur sit quam consequuntur saepe iure corrupti voluptas, temporibus quas? Earum ullam, praesentium dolor assumenda officia, at explicabo nemo nesciunt dolorum repellat sit, similique fugit vel laborum nam!</span>
+                        </div>
                     </div>
-      </div>
+                    <div className='w-full flex flex-col mt-8'>
+                        <div className='flex'>
+                        <div className='w-5 h-5 bg-purple-400 rounded-full mr-4 mt-1' />
+                        <span className='text-2xl text-left font-chic font-extrabold'>This is a question</span>
+                        </div>
+                        <div className='flex mt-4'>
+                            <span className='text-lg text-left ml-16'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut libero facilis officia consectetur sit quam consequuntur saepe iure corrupti voluptas, temporibus quas? Earum ullam, praesentium dolor assumenda officia, at explicabo nemo nesciunt dolorum repellat sit, similique fugit vel laborum nam!</span>
+                        </div>
+                    </div>
+                    <div className='w-full flex flex-col mt-8'>
+                        <div className='flex'>
+                        <div className='w-5 h-5 bg-purple-400 rounded-full mr-4 mt-1' />
+                        <span className='text-2xl text-left font-chic font-extrabold'>This is a question</span>
+                        </div>
+                        <div className='flex mt-4'>
+                            <span className='text-lg text-left ml-16'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut libero facilis officia consectetur sit quam consequuntur saepe iure corrupti voluptas, temporibus quas? Earum ullam, praesentium dolor assumenda officia, at explicabo nemo nesciunt dolorum repellat sit, similique fugit vel laborum nam!</span>
+                        </div>
+                    </div>
+                </div>
+
+
+        </div>
     </div>
   )
 }

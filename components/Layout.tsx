@@ -64,9 +64,11 @@ const Layout = ({children}: {children: React.ReactNode}) => {
         <div className="drawer-side">
             <label htmlFor="my-drawer-3" className="drawer-overlay"></label> 
             <ul className="menu p-4 overflow-y-auto w-80 bg-white text-black font-yadon-regular text-2xl">
+            <h1 className='text-3xl font-extrabold font-chic text-center'>SBS Staging</h1>
             {/* Sidebar */}
-            <li><a>Sidebar Item 1</a></li>
-            <li><a>Sidebar Item 2</a></li>  
+            <span className="text-3xl font-bold underline underline-offset-2">Our Services</span>
+            <li><Link href="/staging">Home Staging</Link></li>
+            <li><Link href="/interior-design">Interior Design</Link></li>
             </ul>    
         </div>
     </div>  
