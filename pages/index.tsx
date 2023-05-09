@@ -20,7 +20,7 @@ const Home: NextPage = () => {
 
       {/* service boxes */}
       <div className='pt-12'>
-        <h1 className='text-center text-8xl px-4 font-chic text-gray-700 font-black'>Home Staging and Interiors</h1>
+        <h1 className='text-center text-8xl font-chic text-gray-700 font-black'>Home Staging and Interiors</h1>
         <Divider style='LARGE'/>
       </div>
       <div className='flex flex-col items-center mx-auto md:flex-row md:justify-between md:items-start gap-10 pb-12'>
