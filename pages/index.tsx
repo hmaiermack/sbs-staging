@@ -19,11 +19,11 @@ const Home: NextPage = () => {
       </div>
 
       {/* service boxes */}
-      <div className='xl:py-16 pt-12'>
+      <div className='pt-12'>
         <h1 className='text-center text-8xl px-4 font-chic text-gray-700 font-black'>Home Staging and Interiors</h1>
         <Divider style='LARGE'/>
       </div>
-      <div className='flex flex-col items-center mx-auto md:flex-row md:justify-between md:items-start gap-10 pb-12 text-gray-500'>
+      <div className='flex flex-col items-center mx-auto md:flex-row md:justify-between md:items-start gap-10 pb-12'>
         <div className='w-4/5 lg:w-1/4 block'>
           <Image 
             src={Hero}

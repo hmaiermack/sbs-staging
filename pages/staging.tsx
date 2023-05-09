@@ -12,7 +12,7 @@ const staging = () => {
         </div>
     <div className='flex flex-col justify-center items-center flex-wrap sm:flex-row w-full py-8'>
         <div className='w-5/6 mb-4 sm:mb-0 sm:px-4 sm:w-1/2 sm:text-left sm:pr-12 sm:pl-0'>
-          <h2 className='text-2xl font-chic font-extrabold'> Home Staging</h2>
+          <h2 className='text-4xl text-gray-700 font-[1000] font-chic'> Home Staging</h2>
           <div className={`w-20 h-1 border-b-2 mt-2 border-purple-400`}></div>
           <p className='my-5'>
             Home staging is the art of furnishing properties for sale. Great staging makes a house feel both chic 
@@ -42,7 +42,7 @@ const staging = () => {
           />
         </div>
         <div className='w-5/6 mt-8 sm:mt-0 sm:px-4 sm:w-1/2 sm:text-left'>
-          <h2 className='text-2xl font-chic font-extrabold'> Why stage with us?</h2>
+          <h2 className='text-4xl text-gray-700 font-[1000] font-chic'> Why stage with us?</h2>
           <div className={`w-20 h-1 border-b-2 mt-2 border-purple-400`}></div>
           <p className='my-5'>
             List item 1

@@ -15,7 +15,7 @@ const interiorDesign = () => {
             </div>
             <div className='flex flex-col justify-center items-center flex-wrap sm:flex-row w-full py-8 mb-8'>
                 <div className='w-5/6 mb-4 sm:mb-0 sm:px-4 sm:w-1/2 sm:text-left sm:pr-12 sm:pl-0'>
-                <h2 className='text-2xl font-chic font-extrabold'> Interior Design</h2>
+                <h2 className='text-4xl text-gray-700 font-[1000] font-chic'> Interior Design</h2>
                 <div className={`w-20 h-1 border-b-2 mt-2 border-purple-400`}></div>
                 <p className='my-5'>
                     Home staging is the art of furnishing properties for sale. Great staging makes a house feel both chic 
@@ -45,7 +45,7 @@ const interiorDesign = () => {
                 />
                 </div>
                 <div className='w-5/6 mt-8 sm:mt-0 sm:px-4 sm:w-1/2 sm:text-left'>
-                <h2 className='text-2xl font-chic font-extrabold'> Services</h2>
+                <h2 className='text-4xl text-gray-700 font-[1000] font-chic'> Services</h2>
                 <div className={`w-20 h-1 border-b-2 mt-2 border-purple-400`}></div>
                 <p className='my-5'>
                     List item 1
@@ -59,7 +59,7 @@ const interiorDesign = () => {
                 </div>
             </div>
             <div className='w-full flex flex-col justify-center items-center'>
-                <h1 className='text-2xl text-center font-chic font-extrabold'>Featured Project</h1>
+                <h1 className='text-4xl text-gray-700 font-[1000] font-chic'>Featured Project</h1>
                 <Divider style='SMALL' />
                 <p className='mt-2 w-4/5 mb-4'>
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur eum quo quae expedita illo possimus? Error fugiat a aliquid similique, ipsum nostrum omnis nemo ducimus provident aliquam? Architecto fuga culpa inventore suscipit. Quaerat dicta minima voluptatem incidunt repellendus deserunt modi illum accusamus quibusdam amet at libero perferendis consequuntur tenetur, nam odio quasi veritatis. Nesciunt voluptates inventore illum excepturi praesentium culpa ut tenetur velit distinctio! Molestiae iure odio nobis quisquam, explicabo rerum beatae facilis quod. Ipsum cupiditate quam expedita, velit in cum aspernatur, nobis doloremque 
@@ -74,13 +74,13 @@ const interiorDesign = () => {
 
         <div className='relative w-screen'>
             <div className=' hidden xl:block absolute z-50 w-3/5 left-[20%] mt-16'>
-                <h1 className='text-4xl text-center text-white font-chic font-extrabold'>Frequently Asked Questions</h1>
+                <h1 className='text-4xl text-center text-white font-chic font-[1000]'>Frequently Asked Questions</h1>
                 <Divider style="SMALL" />
                 <div className='flex flex-col w-full mt-8'>
                     <div className='w-full flex flex-col'>
                         <div className='flex'>
                         <div className='w-10 h-10 bg-purple-400 rounded-full mr-8' />
-                        <span className='text-4xl text-left text-white font-chic font-extrabold'>This is a question</span>
+                        <span className='text-4xl text-white font-[1000] font-chic text-left'>This is a question</span>
                         </div>
                         <div className='flex mt-4'>
                             <span className='text-lg text-left text-white ml-[4.5rem]'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut libero facilis officia consectetur sit quam consequuntur saepe iure corrupti voluptas, temporibus quas? Earum ullam, praesentium dolor assumenda officia, at explicabo nemo nesciunt dolorum repellat sit, similique fugit vel laborum nam!</span>
@@ -89,7 +89,7 @@ const interiorDesign = () => {
                     <div className='w-full flex flex-col mt-8'>
                         <div className='flex'>
                         <div className='w-10 h-10 bg-purple-400 rounded-full mr-8' />
-                        <span className='text-4xl text-left text-white font-chic font-extrabold'>This is a question</span>
+                        <span className='text-4xl text-white font-[1000] font-chic text-left'>This is a question</span>
                         </div>
                         <div className='flex mt-4'>
                             <span className='text-lg text-left text-white ml-[4.5rem]'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut libero facilis officia consectetur sit quam consequuntur saepe iure corrupti voluptas, temporibus quas? Earum ullam, praesentium dolor assumenda officia, at explicabo nemo nesciunt dolorum repellat sit, similique fugit vel laborum nam!</span>
@@ -98,7 +98,7 @@ const interiorDesign = () => {
                     <div className='w-full flex flex-col mt-8'>
                         <div className='flex'>
                         <div className='w-10 h-10 bg-purple-400 rounded-full mr-8' />
-                        <span className='text-4xl text-left text-white font-chic font-extrabold'>This is a question</span>
+                        <span className='text-4xl text-white font-[1000] font-chic text-left'>This is a question</span>
                         </div>
                         <div className='flex mt-4'>
                             <span className='text-lg text-left text-white ml-[4.5rem]'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut libero facilis officia consectetur sit quam consequuntur saepe iure corrupti voluptas, temporibus quas? Earum ullam, praesentium dolor assumenda officia, at explicabo nemo nesciunt dolorum repellat sit, similique fugit vel laborum nam!</span>
@@ -125,7 +125,7 @@ const interiorDesign = () => {
                     <div className='w-full flex flex-col'>
                         <div className='flex'>
                         <div className='w-5 h-5 bg-purple-400 rounded-full mr-4 mt-1' />
-                        <span className='text-2xl text-left font-chic font-extrabold'>This is a question</span>
+                        <span className='text-4xl text-gray-700 font-[1000] font-chic text-left'>This is a question</span>
                         </div>
                         <div className='flex mt-4'>
                             <span className='text-lg text-left ml-16'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut libero facilis officia consectetur sit quam consequuntur saepe iure corrupti voluptas, temporibus quas? Earum ullam, praesentium dolor assumenda officia, at explicabo nemo nesciunt dolorum repellat sit, similique fugit vel laborum nam!</span>
@@ -134,7 +134,7 @@ const interiorDesign = () => {
                     <div className='w-full flex flex-col mt-8'>
                         <div className='flex'>
                         <div className='w-5 h-5 bg-purple-400 rounded-full mr-4 mt-1' />
-                        <span className='text-2xl text-left font-chic font-extrabold'>This is a question</span>
+                        <span className='text-4xl text-gray-700 font-[1000] font-chic text-left'>This is a question</span>
                         </div>
                         <div className='flex mt-4'>
                             <span className='text-lg text-left ml-16'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut libero facilis officia consectetur sit quam consequuntur saepe iure corrupti voluptas, temporibus quas? Earum ullam, praesentium dolor assumenda officia, at explicabo nemo nesciunt dolorum repellat sit, similique fugit vel laborum nam!</span>
@@ -143,7 +143,7 @@ const interiorDesign = () => {
                     <div className='w-full flex flex-col mt-8'>
                         <div className='flex'>
                         <div className='w-5 h-5 bg-purple-400 rounded-full mr-4 mt-1' />
-                        <span className='text-2xl text-left font-chic font-extrabold'>This is a question</span>
+                        <span className='text-4xl text-gray-700 font-[1000] font-chic text-left'>This is a question</span>
                         </div>
                         <div className='flex mt-4'>
                             <span className='text-lg text-left ml-16'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut libero facilis officia consectetur sit quam consequuntur saepe iure corrupti voluptas, temporibus quas? Earum ullam, praesentium dolor assumenda officia, at explicabo nemo nesciunt dolorum repellat sit, similique fugit vel laborum nam!</span>

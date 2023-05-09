@@ -3,6 +3,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import Logo from '../public/logo.svg'
 import Footer from './Footer'
+import Divider from './Divider'
 
 
 const Layout = ({children}: {children: React.ReactNode}) => {
@@ -31,7 +32,7 @@ const Layout = ({children}: {children: React.ReactNode}) => {
                 </div>
             </div>
             <div className="flex-none hidden lg:block">
-                <ul className="menu menu-horizontal font-yadon-regular text-xl">
+                <ul className="menu menu-horizontal font-yadon-bold text-xl text-gray-700">
                 {/* Navbar content */}
                 <li tabIndex={0}>
                     <span>Our Services</span>
@@ -56,17 +57,21 @@ const Layout = ({children}: {children: React.ReactNode}) => {
             </div>
             </div>
             </div>
-            <main className='bg-white mx-auto'>
+            <main className='bg-white mx-auto text-gray-500 font-yadon-bold font-light'>
                 {children}    
             </main>
             <Footer />
         </div> 
         <div className="drawer-side">
             <label htmlFor="my-drawer-3" className="drawer-overlay"></label> 
-            <ul className="menu p-4 overflow-y-auto w-80 bg-white text-black font-yadon-regular text-2xl">
-            <h1 className='text-3xl font-extrabold font-chic text-center'>SBS Staging</h1>
+            <ul className="menu p-4 overflow-y-auto w-80 bg-white text-gray-600 font-yadon-bold text-2xl font-light">
+            <h1 className='text-6xl text-gray-700 font-[1000] font-chic text-center '>SBS Staging</h1>
+            <Divider style="SMALL" />
             {/* Sidebar */}
-            <span className="text-3xl font-bold underline underline-offset-2">Our Services</span>
+            <div className='max-w-fit mt-8'>
+            <span className="text-3xl">Our Services</span>
+            <div className='h-1 border-b-2 border-b-purple-400'/>
+            </div>
             <li><Link href="/staging">Home Staging</Link></li>
             <li><Link href="/interior-design">Interior Design</Link></li>
             </ul>    
