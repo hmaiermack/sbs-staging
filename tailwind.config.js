@@ -11,6 +11,7 @@ module.exports = {
       ["monet-light"]: ["Monet-Light", "sans-serif"],
       ["monet-regular"]: ["Monet-Regular", "sans-serif"],
       ["yadon-regular"]: ["Yadon-Regular", "sans-serif"],
+      ["yadon-bold"]: ["Yadon-Bold", "sans-serif"],
     },
     extend: {},
   },
